@@ -350,14 +350,25 @@
 
     .hero h1{
 
-        font-size:2rem;
+        font-size:.1rem;
 
     }
 
     .hero-tag{
 
-        font-size:.8rem;
+        font-size:.5rem;
+        margin-top: 50px;
 
+    }
+
+    .hero p{
+        display: none;
+
+    }
+
+    .hero-buttons{
+        gap: 1px;
+       
     }
 
     .logo{
@@ -380,45 +391,120 @@
 
 }
 
-@media(max-width:900px){
+@media (max-width:900px){
 
-.hero-container{
+    .navbar{
+        padding:15px 20px;
+    }
 
-    grid-template-columns:1fr;
+    .logo{
+        font-size:1.2rem;
+    }
 
-    text-align:center;
+    .hero{
 
-}
+        min-height:100vh;
+        height:auto;
 
-.hero-model{
+        padding-top:120px;
+        padding-bottom:60px;
 
-    margin-top:30px;
+    }
 
-}
+    .hero-container{
 
-.hero-model img{
+        display:flex;
+        flex-direction:column;
 
-    max-height:400px;
+        text-align:center;
 
-}
+        padding:20px;
 
-.hero-offer{
+        gap:25px;
 
-    position:relative;
+    }
 
-    margin:40px auto 0;
+    .hero-left{
 
-    right:auto;
-    top:auto;
+        width:100%;
+        margin-top:0;
 
-    transform:none;
+    }
 
-}
+    .hero-tag{
 
-.hero-left h1{
+        margin:0 auto 20px;
+        max-width:280px;
 
-    font-size:2.5rem;
+        font-size:.75rem;
 
-}
+    }
+
+    .hero-left h1{
+
+        font-size:2.2rem;
+        line-height:1.15;
+
+    }
+
+    .hero-left p{
+
+        font-size:1rem;
+        line-height:1.7;
+
+        margin:auto;
+
+    }
+
+    .hero-model{
+
+        order:-1;
+        margin:0;
+
+    }
+
+    .hero-model img{
+
+        max-height:320px;
+
+        margin-left:0;
+
+    }
+
+    .hero-offer{
+
+        position:relative;
+
+        top:auto;
+        right:auto;
+
+        transform:none;
+
+        width:180px;
+        height:180px;
+
+        margin:20px auto;
+
+    }
+
+    .hero-offer h2{
+
+        font-size:3rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .hero-buttons a{
+
+        width:280px;
+
+    }
 
 }
