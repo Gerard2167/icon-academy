@@ -184,6 +184,8 @@ header.scrolled .nav-links a{
 
     overflow:hidden;
 
+    background-image: url(/assets/fondo_hero.png);
+
 }
 
 .hero-video{
@@ -260,11 +262,8 @@ header.scrolled .nav-links a{
 
     font-size:1.2rem;
 
-    max-width:700px;
+    max-width:350px;
 
-    margin:auto;
-
-    margin-bottom:40px;
 
 }
 
@@ -1086,44 +1085,122 @@ footer h3{
 
 .opening{
 
-    padding:100px 30px;
-    background:white;
+    padding:100px 20px;
 
 }
 
-.opening-card{
+.opening-container{
 
-    max-width:900px;
+    max-width:1200px;
 
     margin:auto;
 
-    text-align:center;
-
     background:linear-gradient(
         135deg,
-        var(--gold),
-        #f0cf6b
+        #caa22f,
+        #d9b548
     );
+
+    border-radius:20px;
+
+    display:grid;
+
+    grid-template-columns:
+    1.2fr
+    1fr
+    1fr;
+
+    gap:30px;
+
+    padding:35px;
 
     color:white;
 
-    padding:60px;
-
-    border-radius:30px;
+    align-items:center;
 
 }
 
-.opening-card span{
+.opening-label{
+
+    font-size:.8rem;
 
     font-weight:700;
 
 }
 
-.opening-card h2{
+.opening-promo h2{
 
-    margin:20px 0;
+    font-size:2.2rem;
+
+    margin:15px 0;
 
     font-family:'Playfair Display',serif;
+
+}
+
+.promo-date{
+
+    background:#ff3b87;
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.promo-warning{
+
+    font-style:italic;
+
+}
+
+.opening-includes h4{
+
+    margin-bottom:20px;
+
+}
+
+.include-items{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.include-item{
+
+    text-align:center;
+
+}
+
+.icon-circle{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:2rem;
+
+    margin:auto;
+
+    margin-bottom:10px;
 
 }
 
@@ -1131,12 +1208,292 @@ footer h3{
 
     display:flex;
 
-    justify-content:center;
+    flex-direction:column;
 
-    gap:30px;
+    gap:15px;
 
-    margin:40px 0;
+}
+
+.opening-btn{
+
+    background:#111;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 25px;
+
+    border-radius:12px;
+
+    width:max-content;
+
+    margin-top:15px;
+
+    font-weight:600;
+
+}
+
+.countdown-container{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    margin-top:-20px;
+
+    background:#111;
+
+    color:white;
+
+    border-radius:15px;
+
+    padding:15px 25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
 
     flex-wrap:wrap;
+
+}
+
+.countdown{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.time-box{
+
+    text-align:center;
+
+}
+
+.time-box span{
+
+    display:block;
+
+    font-size:1.8rem;
+
+    font-weight:700;
+
+}
+
+.time-box small{
+
+    font-size:.7rem;
+
+}
+
+.countdown-message{
+
+    color:#ff4f8b;
+
+    max-width:250px;
+
+}
+
+/* ==========================
+   HERO PREMIUM
+========================== */
+
+.hero{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+.hero-container{
+
+    width:100%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr
+    500px;
+
+    align-items:center;
+
+    position:relative;
+
+    z-index:5;
+
+    padding:120px 50px;
+
+}
+
+.hero-left{
+
+    max-width:650px;
+
+    color:white;
+
+    margin-top: -105px;
+
+}
+
+.hero-left h1{
+
+    font-size:4rem;
+
+    line-height:1.1;
+
+    margin:20px 0;
+
+}
+
+.hero-left p{
+
+    font-size:1.2rem;
+
+    line-height:1.7;
+
+}
+
+.hero-model{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top: -50px;
+}
+
+.hero-model img{
+
+    max-height:750px;
+
+    object-fit:contain;
+
+    margin-left: -300px;
+
+}
+
+/* PROMO */
+
+.hero-offer{
+
+    position:absolute;
+
+    right:40px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:280px;
+
+    height:280px;
+
+    border-radius:50%;
+
+    border:4px solid #ff4f8b;
+
+    box-shadow:
+    0 0 25px #ff4f8b,
+    0 0 60px rgba(255,79,139,.5);
+
+    background:rgba(0,0,0,.65);
+
+    backdrop-filter:blur(10px);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.offer-badge{
+
+    position:absolute;
+
+    top:-15px;
+
+    background:#ff4f8b;
+
+    padding:8px 25px;
+
+    border-radius:30px;
+
+    font-weight:700;
+
+}
+
+.hero-offer h2{
+
+    font-size:5rem;
+
+    line-height:1;
+
+    color:white;
+
+    margin-top: 30px;
+
+
+}
+
+.hero-offer h3{
+
+    color:#ffffff;
+
+    margin-bottom: 2px;
+
+}
+
+.offer-date{
+
+    background:#D4AF37;
+
+    color:#111;
+
+    padding:10px 20px;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+}
+
+.offer-footer{
+
+    position:absolute;
+
+    bottom:-20px;
+
+    background:#ff4f8b;
+
+    padding:10px 20px;
+
+    border-radius:10px;
+
+    font-weight:700;
 
 }

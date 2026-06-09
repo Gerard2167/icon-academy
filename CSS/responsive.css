@@ -379,3 +379,46 @@
     }
 
 }
+
+@media(max-width:900px){
+
+.hero-container{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.hero-model{
+
+    margin-top:30px;
+
+}
+
+.hero-model img{
+
+    max-height:400px;
+
+}
+
+.hero-offer{
+
+    position:relative;
+
+    margin:40px auto 0;
+
+    right:auto;
+    top:auto;
+
+    transform:none;
+
+}
+
+.hero-left h1{
+
+    font-size:2.5rem;
+
+}
+
+}

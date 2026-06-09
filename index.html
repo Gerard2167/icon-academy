@@ -62,43 +62,76 @@
 
     <section id="inicio" class="hero">
 
-        <video autoplay muted loop playsinline class="hero-video">
-            <source src="assets/hero-video.mp4" type="video/mp4">
-        </video>
+       <div class="overlay"></div>
 
-        <div class="overlay"></div>
+        <div class="hero-container">
 
-        <div class="hero-content">
+            <!-- TEXTO IZQUIERDA -->
 
-            <span class="hero-tag">
-                ✨ Donde nacen las futuras estrellas
-            </span>
+            <div class="hero-left">
 
-            <h1>
-                Descubriendo y formando el talento de nuestra comunidad
-            </h1>
+                <span class="hero-tag">
+                    ✨ DONDE NACEN LAS FUTURAS ESTRELLAS
+                </span>
 
-            <p>
-                Más que modelaje. Creamos experiencias que ayudan a niñas y jóvenes
-                a descubrir su potencial, fortalecer su autoestima y desarrollar habilidades para la vida.
-            </p>
+                <h1>
+                    Descubriendo y formando el talento de nuestra comunidad
+                </h1>
 
-            <div class="hero-buttons">
+                <p>
+                    Más que modelaje. Creamos experiencias que ayudan a niñas
+                    y jóvenes a descubrir su potencial, fortalecer su autoestima
+                    y desarrollar habilidades para la vida.
+                </p>
 
-                <a href="#contacto" class="btn-primary">
-                    Inscribir a mi futura estrella
-                </a>
+                <div class="hero-buttons">
 
-                <a href="https://wa.me/50764373413"
-                    target="_blank"
-                    class="btn-secondary">
-                    WhatsApp
-                </a>
+                    <a href="#contacto" class="btn-primary">
+                        Quiero ser una estrella ✨
+                    </a>
+
+                    <a href="#nosotros" class="btn-secondary">
+                        Conoce más
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- MODELO -->
+
+            <div class="hero-model">
+
+                <img src="assets/modelo.png"
+                    alt="Modelo Principal">
+
+            </div>
+
+            <!-- PROMOCION -->
+
+            <div class="hero-offer">
+
+                <span class="offer-badge">
+                    PROMO
+                </span>
+
+                <h2>20%</h2>
+
+                <h3>DE DESCUENTO</h3>
+
+                <p>SOLO HASTA EL</p>
+
+                <div class="offer-date">
+                    16 DE JUNIO
+                </div>
+
+                <div class="offer-footer">
+                    ¡NO TE LO PIERDAS!
+                </div>
 
             </div>
 
         </div>
-
     </section>
 
     <!-- ¿QUÉ OFRECEMOS -->
@@ -345,55 +378,161 @@
 
     <section class="opening">
 
-        <div class="opening-card">
+        <section class="opening">
 
-            <span>
-                GRAN APERTURA
-            </span>
+        <div class="opening-container">
 
-            <h2>
-                ¡¡20% de descuento en tu inscripción!!
-            </h2>
+            <!-- PROMOCIÓN -->
 
-            <p>
+            <div class="opening-promo">
 
-                Incluye:
+                <span class="opening-label">
+                    GRAN APERTURA
+                </span>
 
-            </p>
+                <h2>
+                    20% de descuento
+                    <br>
+                    en tu inscripción
+                </h2>
 
-            <ul>
-
-                <li>📸 Sesión de fotos</li>
-
-                <li>👚 T-shirt de la academia</li>
-
-
-            </ul>
-
-            <div class="opening-info">
-
-                <div>
-                    📍 Don Bosco
+                <div class="promo-date">
+                    SOLO HASTA EL 16 DE JUNIO
                 </div>
 
-                <div>
-                    📅 16 de junio de 2026
-                </div>
+                <p class="promo-warning">
+                    ✨ ¡Cupos limitados!
+                </p>
 
-                <div>
-                    🎟 Cupos Limitados
+            </div>
+
+            <!-- INCLUYE -->
+
+            <div class="opening-includes">
+
+                <h4>INCLUYE:</h4>
+
+                <div class="include-items">
+
+                    <div class="include-item">
+
+                        <div class="icon-circle">
+                            📷
+                        </div>
+
+                        <span>
+                            Sesión de fotos
+                        </span>
+
+                    </div>
+
+                    <div class="include-item">
+
+                        <div class="icon-circle">
+                            👕
+                        </div>
+
+                        <span>
+                            T-shirt academia
+                        </span>
+
+                    </div>
+
                 </div>
 
             </div>
 
-            <a href="#contacto"
-                class="btn-primary">
+            <!-- INFO -->
 
-                Reservar Mi Cupo
+            <div class="opening-info">
 
-            </a>
+                <div class="info-item">
+                    📍 Don Bosco
+                </div>
+
+                <div class="info-item">
+                    📅 16 de junio de 2026
+                </div>
+
+                <div class="info-item">
+                    🎟 Cupos Limitados
+                </div>
+
+                <a href="#contacto"
+                    class="opening-btn">
+
+                    Reservar Mi Cupo →
+
+                </a>
+
+            </div>
 
         </div>
+
+        <!-- COUNTDOWN -->
+
+        <div class="countdown-container">
+
+            <div class="countdown-left">
+
+                ⏰ LA PROMO TERMINA EN:
+
+            </div>
+
+            <div class="countdown">
+
+                <div class="time-box">
+
+                    <span id="days">
+                        05
+                    </span>
+
+                    <small>DÍAS</small>
+
+                </div>
+
+                <div class="time-box">
+
+                    <span id="hours">
+                        12
+                    </span>
+
+                    <small>HORAS</small>
+
+                </div>
+
+                <div class="time-box">
+
+                    <span id="minutes">
+                        34
+                    </span>
+
+                    <small>MINUTOS</small>
+
+                </div>
+
+                <div class="time-box">
+
+                    <span id="seconds">
+                        59
+                    </span>
+
+                    <small>SEGUNDOS</small>
+
+                </div>
+
+            </div>
+
+            <div class="countdown-message">
+
+                No dejes pasar esta oportunidad
+                única para tu futura estrella.
+
+            </div>
+
+        </div>
+
+    </section>
 
     </section>
 
