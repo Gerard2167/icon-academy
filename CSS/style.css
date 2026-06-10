@@ -21,6 +21,8 @@
 
     --transition:.35s ease;
 
+    --black: #111;
+
 }
 
 /* ==========================
@@ -192,8 +194,7 @@ header.scrolled .nav-links a{
 
     inset:0;
 
-    background-image: url(/assets/fondo_hero.png);
-
+    background-color: var(--black);
 }
 
 .hero-content{
