@@ -192,7 +192,7 @@ header.scrolled .nav-links a{
 
     inset:0;
 
-    background-image: url('/assets/fondo_hero.png');
+    background-image: url(/assets/fondo_hero.png);
 
 }
 
